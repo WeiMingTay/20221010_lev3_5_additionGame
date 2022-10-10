@@ -14,6 +14,7 @@ body {
     background-image: url(../img/photo-1635070041078-e363dbe005cb.avif);
     background-position: center;
     background-size: cover;
+    transition: all 750ms;
 }
 /* fonts */
 @font-face {
@@ -43,9 +44,8 @@ form {
 main {
     background-color: #fff;
     padding: 10rem 5rem;
-    margin-top: 20vh;
-    transition: all 750ms;
-    border-radius: 50px 0 50px 0;
+    transition: all 1500ms;
+    border-radius: 100px 0 100px 0;
 }
 p {
     display: inline-block;
@@ -68,6 +68,7 @@ p {
     height: 2.5rem;
     font-size: 1.5rem;
     width: 150px;
+    padding-left: 1rem;
 }
 button {
     margin: auto .5rem;
@@ -75,9 +76,12 @@ button {
     font-size: 1.2rem;
     border-radius: 5px;
     background-color: #fff;
+    box-shadow: 0 0 20px -5px black;
+    border: none;
 }
 button:hover {
-    background-color: gainsboro;
+    scale: 1.1;
+    box-shadow: 0 0 15px -5px black;
 }
 #ergebnis {
     display: block;
@@ -85,17 +89,33 @@ button:hover {
     margin-top: 2rem;
     font-size: 2.3rem;
     font-family: orbitron;
+    color: transparent;
 }
 
 /* Media */
 @media (max-width: 780px) {
+    body {
+        padding: 1rem;
+    }
+    .random {
+        font-size: 1.5rem;
+        width: 80px;
+        height: 80px;
+
+    }
     form {
         flex-direction: column;
     }
     main {
         padding: 3rem;
+        border-radius: 0 50px 0 50px;
     }
     button {
-        margin: .5rem auto;
+        margin: .5rem auto .1rem auto;
+    }
+    #ergebnis {
+        font-size: 1.2rem;
+        margin-top: .5rem;
+        
     }
 }
