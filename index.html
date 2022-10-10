@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lev3_5 addition Game</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <main>
+        <section>
+            <form action="" onsubmit="return false">
+                <p class="random" id="zahl1"></p>
+                <p class="zeichen addition">+</p>
+                <p class="random" id="zahl2"></p>
+                <p class="zeichen gleich">=</p>
+                <input type="number" id="ergebnisInput" required>
+                <button onclick="send()">Send</button>
+                <button onclick="neuesRaetsel()">Neues Rätsel</button>
+            </form>
+        </section>
+        <p id="ergebnis"></p>
+    </main>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
