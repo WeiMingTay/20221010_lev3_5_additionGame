@@ -8,6 +8,7 @@ Allgemein
 }
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 5rem;
@@ -32,7 +33,25 @@ body {
 /* ==========
 Header
 ========== */
-
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #fff;
+    height: 30px;
+    border-radius: 0 0 50px 0;
+    padding-top: .2rem;
+}
+header a {
+    padding-right: 2rem;
+    padding-left: .2rem;
+    color: #000;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header a:hover {
+    text-decoration: underline;
+}
 /* ==========
 Main
 ========== */
@@ -76,12 +95,12 @@ button {
     font-size: 1.2rem;
     border-radius: 5px;
     background-color: #fff;
-    box-shadow: 0 0 20px -5px black;
+    box-shadow: 0 0 20px -7px black;
     border: none;
 }
 button:hover {
     scale: 1.1;
-    box-shadow: 0 0 15px -5px black;
+    box-shadow: 0 0 15px -7px black;
 }
 #ergebnis {
     display: block;
