@@ -128,6 +128,8 @@ button:hover {
     main {
         padding: 3rem;
         border-radius: 0 50px 0 50px;
+        height: 80vh;
+        margin-top: 6vh;
     }
     button {
         margin: .5rem auto .1rem auto;
